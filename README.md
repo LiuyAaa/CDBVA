@@ -41,7 +41,6 @@ for example：
 
 ![image](https://github.com/LiuyAaa/CDBVA/assets/28710052/e716c7c5-098e-4d6a-a61d-f7070076a379)
 
-The results are saved in input.find_ In error.
 
 
 
