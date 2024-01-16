@@ -17,7 +17,7 @@ do
 	/home/yy2/Desktop/llvm/build/bin/opt -load /home/yy2/Desktop/llvm/build/lib/SplitBlock.so -SplitBlock -S -index $line ${filename%.c}.ll -o  ${filename%.c}.ll 
 done
 echo 'split done'
-/home/yy2/Desktop/llvm/build/bin/opt -load /home/yy2/Desktop/llvm/build/lib/HARDEN.so -HARDEN -S ${filename%.c}.ll -o cfcss.ll
+/home/yy2/Desktop/llvm/build/bin/opt -load /home/yy2/Desktop/llvm/build/lib/HARDEN.so -HARDEN -S ${filename%.c}.ll -o harden.ll
 echo 'harden done'
 /home/yy2/Desktop/llvm/build/bin/clang -lm harden.ll -o ${filename%.c}_CDBVA
 
